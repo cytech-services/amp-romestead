@@ -33,7 +33,7 @@ App.WindowsCommandLineArgs=
 App.CommandLineArgs={{$PlatformArgs}}
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
-App.EnvironmentVariables={"DOTNET_ROOT":"{{$FullRootDir}}dotnet","LD_LIBRARY_PATH":"{{$FullBaseDir}}:{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%"}
+App.EnvironmentVariables={"HOME":"{{$FullBaseDir}}","XDG_DATA_HOME":"{{$FullBaseDir}}.local/share","DOTNET_ROOT":"{{$FullRootDir}}dotnet","LD_LIBRARY_PATH":"{{$FullBaseDir}}:{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%"}
 
 App.ExitMethod=String
 App.ExitMethodWindows=String
