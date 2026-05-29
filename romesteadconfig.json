@@ -1,0 +1,96 @@
+[
+  {
+    "DisplayName": "Game Port",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "UDP port used by the Romestead server.",
+    "FieldName": "$GamePort",
+    "InputType": "number",
+    "Hidden": true,
+    "ParamFieldName": "Port",
+    "IncludeInCommandLine": false,
+    "ExcludeFromImport": true,
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "World Name",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "World to auto-start. Leave empty to let the server use its default behaviour.",
+    "FieldName": "AutoStartWorldName",
+    "InputType": "text",
+    "ParamFieldName": "AutoStartWorldName",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Auto Create and Load World",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "Create and load a world automatically when the server starts.",
+    "FieldName": "AutoCreateAndLoadWorld",
+    "InputType": "checkbox",
+    "ParamFieldName": "AutoCreateAndLoadWorld",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "World Size",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "World size value. Public examples use 1 as the default; verify valid values in-game.",
+    "FieldName": "AutoCreateWorldSize",
+    "InputType": "number",
+    "ParamFieldName": "AutoCreateWorldSize",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Server Password",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "Password required to join the server. Leave empty for no password.",
+    "FieldName": "Password",
+    "InputType": "password",
+    "ParamFieldName": "Password",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Max Players",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "Maximum number of players.",
+    "FieldName": "$MaxUsers",
+    "InputType": "number",
+    "ParamFieldName": "MaxPlayers",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "8",
+    "MinValue": "1",
+    "MaxValue": "64",
+    "Suffix": "players",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Enable Cheats",
+    "Category": "Romestead:stadia_controller",
+    "Subcategory": "Server:dns:1",
+    "Description": "Enable cheats on the server.",
+    "FieldName": "EnableCheats",
+    "InputType": "checkbox",
+    "ParamFieldName": "EnableCheats",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  }
+]
