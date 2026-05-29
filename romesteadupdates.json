@@ -1,0 +1,19 @@
+[
+  {
+    "UpdateStageName": "SteamCMD Download",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "SteamCMD",
+    "UpdateSourceData": "4763510",
+    "UpdateSourceArgs": "1805320",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Create Default Config",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}config.json",
+    "UpdateSourceData": "{\n  \"AutoStartWorldName\": \"\",\n  \"AutoCreateAndLoadWorld\": true,\n  \"AutoCreateWorldSize\": 1,\n  \"AutoCreateWorldSeed\": null,\n  \"Password\": \"\",\n  \"Port\": 8050,\n  \"MaxPlayers\": 8,\n  \"EnableCheats\": false\n}\n",
+    "OverwriteExistingFiles": false,
+    "SkipOnFailure": false
+  }
+]
