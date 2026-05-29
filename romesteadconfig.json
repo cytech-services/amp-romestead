@@ -48,7 +48,7 @@
     "InputType": "number",
     "ParamFieldName": "AutoCreateWorldSize",
     "IncludeInCommandLine": false,
-    "DefaultValue": "3",
+    "DefaultValue": "2",
     "EnumValues": {}
   },
   {
