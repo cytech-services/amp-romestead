@@ -21,7 +21,7 @@
     "InputType": "text",
     "ParamFieldName": "AutoStartWorldName",
     "IncludeInCommandLine": false,
-    "DefaultValue": "World",
+    "DefaultValue": "Barbarian Romestead",
     "EnumValues": {}
   },
   {
@@ -48,7 +48,7 @@
     "InputType": "number",
     "ParamFieldName": "AutoCreateWorldSize",
     "IncludeInCommandLine": false,
-    "DefaultValue": "1",
+    "DefaultValue": "3",
     "EnumValues": {}
   },
   {
@@ -60,7 +60,7 @@
     "InputType": "password",
     "ParamFieldName": "Password",
     "IncludeInCommandLine": false,
-    "DefaultValue": "",
+    "DefaultValue": "dorks",
     "EnumValues": {}
   },
   {
@@ -72,7 +72,7 @@
     "InputType": "number",
     "ParamFieldName": "MaxPlayers",
     "IncludeInCommandLine": false,
-    "DefaultValue": "8",
+    "DefaultValue": "32",
     "MinValue": "1",
     "MaxValue": "64",
     "Suffix": "players",
