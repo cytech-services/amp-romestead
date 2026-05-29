@@ -1,5 +1,21 @@
 [
   {
+    "UpdateStageName": "Create Dotnet Directory",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullRootDir}}dotnet",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": ".NET 8 Runtime Download",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSourceArch": "x86_64",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"cd \\\"{{$FullRootDir}}\\\" && DotnetVersion=$(wget -qO- https://builds.dotnet.microsoft.com/dotnet/release-metadata/8.0/releases.json | jq -r '.[\\\"latest-runtime\\\"]') && if [[ -x dotnet/dotnet ]]; then InstalledVersion=$(dotnet/dotnet --version | xargs); else InstalledVersion=\\\"\\\"; fi && if [[ \\\"$InstalledVersion\\\" == \\\"$DotnetVersion\\\" ]]; then echo \\\".NET Runtime $DotnetVersion already installed. Skipping\\\" && exit 0; fi && rm -f dotnet-runtime.tar.gz && wget -qO dotnet-runtime.tar.gz https://builds.dotnet.microsoft.com/dotnet/Runtime/$DotnetVersion/dotnet-runtime-$DotnetVersion-linux-x64.tar.gz || { echo \\\"Failed to download .NET Runtime $DotnetVersion\\\"; exit 1; } && rm -rf dotnet/* && tar -xzf dotnet-runtime.tar.gz -C dotnet && rm -f dotnet-runtime.tar.gz && chmod +x dotnet/dotnet && echo \\\".NET Runtime $DotnetVersion downloaded\\\"\"",
+    "SkipOnFailure": false
+  },
+  {
     "UpdateStageName": "SteamCMD Download",
     "UpdateSourcePlatform": "All",
     "UpdateSource": "SteamCMD",
