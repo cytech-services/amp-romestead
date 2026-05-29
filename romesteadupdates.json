@@ -31,5 +31,19 @@
     "UpdateSourceData": "{\n  \"AutoStartWorldName\": \"\",\n  \"AutoCreateAndLoadWorld\": true,\n  \"AutoCreateWorldSize\": 1,\n  \"AutoCreateWorldSeed\": null,\n  \"Password\": \"\",\n  \"Port\": 8050,\n  \"MaxPlayers\": 8,\n  \"EnableCheats\": false\n}\n",
     "OverwriteExistingFiles": false,
     "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Create GameAnalytics Directory",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullBaseDir}}GameAnalytics",
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Create XDG Data Directory",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "CreateDirectory",
+    "UpdateSourceArgs": "{{$FullBaseDir}}.local/share/GameAnalytics",
+    "SkipOnFailure": false
   }
 ]
