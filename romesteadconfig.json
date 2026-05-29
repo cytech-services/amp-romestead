@@ -21,7 +21,7 @@
     "InputType": "text",
     "ParamFieldName": "AutoStartWorldName",
     "IncludeInCommandLine": false,
-    "DefaultValue": "",
+    "DefaultValue": "World",
     "EnumValues": {}
   },
   {
